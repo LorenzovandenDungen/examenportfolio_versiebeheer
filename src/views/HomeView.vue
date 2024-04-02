@@ -2,7 +2,7 @@
   <div class="container">
     <!-- Main content area -->
     <div class="main-content">
-      <h1>Heading</h1>
+      <h1>Home</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <div class="image-placeholder">Afbeelding</div>
       <div class="buttons">
