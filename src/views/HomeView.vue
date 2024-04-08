@@ -39,7 +39,7 @@
 <script>
 export default {
   name: 'HomeView'
-  // No router used here, so you can remove the import and setup
+  // You can add your script content here if needed
 };
 </script>
 
@@ -47,7 +47,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Make the container fill the full viewport height */
+  min-height: 100vh;
 }
 
 .header {
@@ -59,7 +59,8 @@ export default {
 }
 
 .logo {
-  width: 150px; /* You can adjust this as per your logo's dimensions */
+  /* Adjust this as necessary */
+  width: 150px;
   height: auto;
 }
 
@@ -74,44 +75,49 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  flex-grow: 1; /* Take up available space */
+  flex-grow: 1;
 }
 
 .content {
   display: flex;
-  justify-content: space-around;
-  flex-grow: 1; /* Take up available space */
+  justify-content: space-between;
+  flex-grow: 2; /* Allows this section to take up more space */
 }
 
 .content-block {
-  border: 1px solid #000;
-  padding: 1rem;
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc(33.333% - 2rem);
+  margin: 1rem;
 }
 
 .image-placeholder {
-  background-color: #ddd;
+  width: 100%;
   height: 150px;
+  background-color: #ddd;
   margin-bottom: 1rem;
 }
 
 .text-placeholder {
-  background-color: #eee;
-  height: 2rem;
-  margin-bottom: 1rem;
   width: 100%;
+  height: 2rem;
+  background-color: #eee;
+  margin-bottom: 1rem;
 }
 
 .features {
   background-color: #90CAF9;
   display: flex;
-  justify-content: space-around;
-  flex-grow: 1; /* Take up available space */
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .feature-block {
   background-color: #fff;
   padding: 1rem;
+  flex-basis: calc(33.333% - 2rem);
+  margin: 1rem;
 }
 
 .main-button, button {
@@ -127,5 +133,6 @@ export default {
   color: #fff;
   text-align: center;
   padding: 1rem;
+  margin-top: auto; /* Pushes footer to the bottom */
 }
 </style>

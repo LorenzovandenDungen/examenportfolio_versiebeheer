@@ -2,9 +2,7 @@
   <div id="app">
     <GlobalHeader />
     <router-view />
-    <footer class="footer">
-      Footer
-    </footer>
+    <!-- Removed the footer from here to avoid duplication with HomeView.vue -->
   </div>
 </template>
 
@@ -20,12 +18,7 @@ export default {
 }
 </script>
 
+<!-- Keep your style for .footer if you have other pages that will use it -->
 <style>
 /* Global styles */
-.footer {
-  border-top: 1px solid #000;
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto; /* If using Flexbox or Grid on #app */
-}
 </style>
