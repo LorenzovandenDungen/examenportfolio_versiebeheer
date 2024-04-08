@@ -1,6 +1,10 @@
 <template>
+  <div class="tarieven-view">
+    <header>
+      <!-- Navigation goes here -->
+    </header>
 
-    <div class="content">
+    <main class="content">
       <h1 class="title">Tarieven</h1>
       <p class="introduction">Korte inleiding</p>
       <p class="description">
@@ -20,86 +24,95 @@
           <button class="buy-button">Kopen</button>
         </div>
       </div>
-    </div>
+    </main>
+
     <footer>
       <p class="footer-content">Footer</p>
     </footer>
-
+  </div>
 </template>
 
 <script setup>
-
+// Import your components or any scripts if needed
 </script>
 
 <style scoped>
-/* Adjusted the layout, colors, and typography to match the new design */
-.container {
+.tarieven-view {
   font-family: 'Arial', sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.navigation .nav-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.nav-list li {
-  cursor: pointer;
-}
-.nav-list li.active {
-  border-bottom: 3px solid #000;
-  padding-bottom: 5px;
-}
-.content {
-  text-align: center;
-  margin-top: 20px;
-}
-.title {
-  margin-bottom: 10px;
-}
-.introduction {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.description {
-  margin-bottom: 30px;
-}
-.price-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.price-box {
-  border: 2px solid #000;
-  padding: 20px;
-  width: 200px;
-  height: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  min-height: 100vh;
 }
+
+header {
+  /* Add header styles here */
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.introduction {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.description {
+  margin-bottom: 3em;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.price-box {
+  border: 1px solid #ccc;
+  padding: 2em;
+  width: 300px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .buy-button {
-  background-color: transparent;
+  background-color: #fff;
   padding: 10px 20px;
   cursor: pointer;
   border: 2px solid #000;
   transition: background-color 0.3s ease;
 }
+
 .buy-button:hover {
   background-color: #000;
   color: #fff;
 }
+
 footer {
-  border-top: 2px solid #000;
-  padding: 10px 0;
-  margin-top: 30px;
-}
-.footer-content {
+  border-top: 1px solid #ccc;
+  padding: 1em 0;
   text-align: center;
+}
+
+.footer-content {
+  margin: 0;
 }
 </style>
