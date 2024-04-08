@@ -1,14 +1,5 @@
 <template>
   <div class="vertical-container">
-    <nav>
-      <ul class="nav-list">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/websites" class="active">Websites</a></li>
-        <li><a href="/tarieven">Tarieven</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/offerte">Offerte</a></li>
-      </ul>
-    </nav>
     <section class="main-content">
       <h1>Werkwijze</h1>
       <p>
