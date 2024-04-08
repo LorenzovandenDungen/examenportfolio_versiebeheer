@@ -11,9 +11,6 @@
         <button @click="goToContact">Contact</button>
       </div>
     </section>
-    <footer>
-      <p>Footer</p>
-    </footer>
   </div>
 </template>
 
