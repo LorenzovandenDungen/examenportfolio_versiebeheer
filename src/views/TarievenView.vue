@@ -1,83 +1,105 @@
 <template>
-  <div class="container">
-    <GlobalHeader />
-    <div class="header">
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Websites</li>
-          <li class="active">Tarieven</li>
-          <li>Contact</li>
-          <li>Offerte</li>
-        </ul>
-      </nav>
-    </div>
-    <div class="main-content">
-      <h1>Tarieven</h1>
-      <p class="intro">Korte inleiding</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <div class="prices">
-        <!-- Add your pricing details here -->
+
+    <div class="content">
+      <h1 class="title">Tarieven</h1>
+      <p class="introduction">Korte inleiding</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="price-container">
         <div class="price-box">
-          <h2>Prijs</h2>
-          <button>Kopen</button>
+          <p class="price">Prijs</p>
+          <button class="buy-button">Kopen</button>
         </div>
         <div class="price-box">
-          <h2>Prijs</h2>
-          <button>Kopen</button>
+          <p class="price">Prijs</p>
+          <button class="buy-button">Kopen</button>
         </div>
         <div class="price-box">
-          <h2>Prijs</h2>
-          <button>Kopen</button>
+          <p class="price">Prijs</p>
+          <button class="buy-button">Kopen</button>
         </div>
       </div>
     </div>
     <footer>
-      <p>Footer</p>
+      <p class="footer-content">Footer</p>
     </footer>
-  </div>
+
 </template>
 
 <script setup>
-import GlobalHeader from '../components/GlobalHeader.vue'
+
 </script>
 
 <style scoped>
+/* Adjusted the layout, colors, and typography to match the new design */
 .container {
-  width: 100%;
+  font-family: 'Arial', sans-serif;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
-.header nav ul {
+.navigation .nav-list {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
 }
-.header nav ul li {
-  display: inline;
+.nav-list li {
+  cursor: pointer;
 }
-.header nav ul li.active {
-  font-weight: bold;
+.nav-list li.active {
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
 }
-.main-content {
+.content {
   text-align: center;
+  margin-top: 20px;
 }
-.intro {
-  font-style: italic;
+.title {
+  margin-bottom: 10px;
 }
-.prices {
+.introduction {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.description {
+  margin-bottom: 30px;
+}
+.price-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .price-box {
-  border: 1px solid #000;
+  border: 2px solid #000;
   padding: 20px;
-  margin: 20px;
-  text-align: center;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy-button {
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid #000;
+  transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+  background-color: #000;
+  color: #fff;
 }
 footer {
+  border-top: 2px solid #000;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+.footer-content {
   text-align: center;
-  padding: 20px 0;
 }
 </style>
